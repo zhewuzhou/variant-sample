@@ -1,0 +1,3 @@
+include ':app'
+includeBuild 'standalone-android-gradle-plugin'
+rootProject.name = "My Application"
