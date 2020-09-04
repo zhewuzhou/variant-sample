@@ -20,6 +20,31 @@ android {
     compileSdkVersion 30
     buildToolsVersion "30.0.2"
 
+    flavorDimensions "content", "mode"
+
+    productFlavors {
+        elvispresley {
+            applicationId 'com.sample.elvispresley'
+            versionCode 1
+            versionName '1.0'
+            dimension "content"
+        }
+        whitneyhouston {
+            applicationId 'com.sample.whitneyhouston'
+            versionCode 2
+            versionName '1.0.1'
+            dimension "content"
+        }
+        demo {
+            applicationIdSuffix ".demo"
+            dimension "mode"
+        }
+        full {
+            applicationIdSuffix ".full"
+            dimension "mode"
+        }
+    }
+
     defaultConfig {
         applicationId "com.example.myapplication"
         minSdkVersion 16
